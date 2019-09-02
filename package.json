@@ -1,10 +1,10 @@
 {
-  "name": "mern_project",
+  "name": "mernDeploy",
   "version": "1.0.0",
   "description": "My mern project from Traversy Media",
   "main": "server.js",
   "scripts": {
-    "dev": "concurrently -p \"[{mern_Project}]\" -n \"HTTP,JS,LESS\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run server\" \"npm run client\"",
+    "dev": "concurrently -p \"[{mernDeploy}]\" -n \"HTTP,JS,LESS\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run server\" \"npm run client\"",
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
     "start": "node server.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/groveincharge/mern_Project.git"
+    "url": "git+https://github.com/groveincharge/mernDeploy.git"
   },
   "author": "Wingrove Dasent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/groveincharge/mern_Project/issues"
+    "url": "https://github.com/groveincharge/mernDeploy/issues"
   },
-  "homepage": "https://github.com/groveincharge/mern_Project#readme",
+  "homepage": "https://github.com/groveincharge/mernDeploy#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.2",
