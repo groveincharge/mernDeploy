@@ -1,0 +1,33 @@
+{
+  "name": "mern_project",
+  "version": "1.0.0",
+  "description": "My mern project from Traversy Media",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently -p \"[{mern_Project}]\" -n \"HTTP,JS,LESS\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run server\" \"npm run client\"",
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "client": "npm start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/groveincharge/mern_Project.git"
+  },
+  "author": "Wingrove Dasent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/groveincharge/mern_Project/issues"
+  },
+  "homepage": "https://github.com/groveincharge/mern_Project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
