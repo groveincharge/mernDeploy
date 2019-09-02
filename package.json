@@ -10,16 +10,15 @@
     "client": "npm start --prefix client",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
+  "proxy": "http://localhost:5000",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/groveincharge/mernDeploy.git"
-  },
+    "url": "git+https://github.com/groveincharge/mernDeploy.git",
   "author": "Wingrove Dasent",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/groveincharge/mernDeploy/issues"
   },
-  "proxy": "http://localhost:5000",
   "homepage": "https://github.com/groveincharge/mernDeploy#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
