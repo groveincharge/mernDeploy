@@ -23,6 +23,7 @@ if(process.env.NODE_ENV === 'production') {
        app.get('*', (req, res) =>{
              res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
        })      
-};
+} else{
 const port = process.env.PORT || 5000;
 app.listen(port, ()=> console.log(`Server started on port ${port}`));
+};
