@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "My mern project from Traversy Media",
   "main": "server.js",
-  "scripts": {
-    "start": "concurrently -p \"[{mernDeploy}]\" -n \"HTTP,JS,LESS\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run server\" \"npm run client\"",
+  "scripts":{
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
+    "client": "npm start --prefix client",  
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
