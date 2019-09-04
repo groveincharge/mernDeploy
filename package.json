@@ -4,8 +4,7 @@
   "description": "My mern project from Traversy Media",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "concurrently -p \"[{mernDeploy}]\" -n \"HTTP,JS,LESS\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run server\" \"npm run client\"",
+    "start": "concurrently -p \"[{mernDeploy}]\" -n \"HTTP,JS,LESS\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run server\" \"npm run client\"",
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
