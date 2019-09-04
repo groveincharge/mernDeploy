@@ -14,7 +14,7 @@ mongoose.connect(db, {useNewUrlParser: true})
 .then(()=> console.log('MongoDB successfully connected ...'))
 .catch(err => console.log(err));
 
-app.use('/api/items', items);
+app.use('./routes/api/items', items);
 
 //serve static assets if in production mode.
 if(process.env.NODE_ENV === 'production') {
